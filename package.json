@@ -1,22 +1,14 @@
 {
   "name": "playwright-automation",
   "version": "1.0.0",
-  "description": "This repository contains automated test scripts created using Playwright for testing functional scenarios of a web application. It includes multiple test cases, such as logging in, logging out, and verifying search functionality. The tests aim to ensure that core features of the application work as expected.",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "Playwright automation project with TypeScript",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@playwright/test": "^1.49.1"
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug"
   },
   "devDependencies": {
-    "ts-node": "^10.9.2",
-    "typescript": "^5.7.2"
+    "@playwright/test": "^1.39.0",
+    "typescript": "^5.0.0"
   }
 }
